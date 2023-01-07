@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+         box-sizing: border-box;
+      }
+  .main-box{
+   background-color: bisque;
+   width: 400px;
+   height: 400px;
+   margin: auto;
+  }
+  .circle-box{
+   width: 100px;
+   height: 100px;
+   background-color: aqua;
+   border-radius: 50%;
+  }
+      
+    </style>
+</head>
+<body>
+   <button id="myValue">Click Here</button>
+   <div class="main-box">
+    
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi tempora at facere impedit illo amet sint a nihil repellat deleniti. Veritatis commodi impedit doloremque consequatur neque fuga praesentium, laboriosam perspiciatis facere atque tenetur at quod, earum eaque ducimus debitis tempora.</p>
+   </div>
+     <ul id="menu">
+      <li>Html</li>
+      <li>css</li>
+      <li>php</li>
+      <li>javascript</li>
+      <li>jquery</li>
+      <li>laravel</li>
+     </ul>
+   
+ 
+    
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="custom.js"></script>
+     <script>
+      $(document).ready(function(){
+         $("#myValue").click(function(){
+            $("p").css({"background-color":"red"});
+         });
+         
+      });
+</script> 
+<!----method2-->
+
+<script>
+   $(document).ready(function(){
+      
+      $("#menu li").css("border","2px solid red");
+      $("ul li:eq(2)").css("border","2px solid black");
+   });
+</script> 
+ 
+
+</body>
+</html>

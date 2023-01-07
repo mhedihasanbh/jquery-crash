@@ -1,0 +1,24 @@
+const login = document.getElementById('login');
+const loginMenu = document.getElementById('loginMenu');
+ 
+login.addEventListener('click', () => {
+  if(loginMenu.style.display === 'none'){
+    loginMenu.style.display = 'inline';
+  } else {
+    loginMenu.style.display = 'none';
+  }
+});
+
+
+=======format--2===========
+/Selecting DOM elements and adding an event listener in JS
+const menu = document.getElementById('menu');
+const closeMenuButton = document.getElementById('close-menu-button');
+closeMenuButton.addEventListener('click', () => {
+    menu.style.display = 'none';
+});
+
+//Selecting DOM elements and adding an event listener in jQuery
+$('#close-menu-button').on('click', () =>{
+  $('#menu').hide();  
+});

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+         box-sizing: border-box;
+      }
+      .buttons{
+         display: flex;
+         justify-content: center;
+      }
+      .value-btn{
+         margin:0 auto;
+         display: flex;
+         justify-content: center;
+        
+      }
+      .value-btn button{
+         background-color: aqua;
+         padding: 8px 20px;
+         margin-top: 12px;
+         border: none;
+      }
+  .main-box{
+   background-color: bisque;
+   width: 400px;
+   height: 400px;
+   margin: auto;
+  }
+  .main-box p{
+   padding: 20px;
+  }
+  .new-class{
+  
+   padding: 12px;
+   display: flex;
+   justify-content: end;
+ }
+ .bg{
+   background-color: brown;
+   color: #fff;
+
+  }
+  
+      
+    </style>
+</head>
+<body>
+   <div class="buttons">
+      <div class="value-btn">
+         <button id="myValue">Add Class</button>
+      </div>
+      <div class="value-btn">
+         <button id="removeValue">Remove Class</button>
+      </div>
+      <div class="value-btn">
+         <button id="togleValue">Toggle</button>
+      </div>
+   </div>
+   
+   
+   <div class="main-box">
+    
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi tempora at facere impedit illo amet sint a nihil repellat deleniti. Veritatis commodi impedit doloremque consequatur neque fuga praesentium, laboriosam perspiciatis facere atque tenetur at quod, earum eaque ducimus debitis tempora.</p>
+      <h2 class="box-header">Design By Jquery</h2>
+   </div>
+
+  
+
+   
+ 
+    
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="custom.js"></script>
+     <script>
+      $(document).ready(function(){
+         $("#myValue").click(function(){
+            $(".box-header").addClass("new-class bg");
+         });
+
+         $("#removeValue").click(function(){
+            $(".box-header").removeClass("bg");
+         });
+
+         $("#togleValue").click(function(){
+            $(".box-header").toggleClass("bg");
+         });
+
+
+       
+        
+
+
+        
+ });
+</script> 
+
+ 
+
+</body>
+</html>

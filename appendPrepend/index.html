@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+         box-sizing: border-box;
+      }
+  .main-box{
+   background-color: bisque;
+   width: 800px;
+   height: 800px;
+   margin: auto;
+  }
+  .main-box ul{
+    display: flex;
+    margin-top: 20px;
+  }
+  .main-box ul li{
+    list-style: none;
+    padding: 12px;
+  }
+  .main-box ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #000;
+    
+  }
+  .navbar li a.active{
+    color: aquamarine;
+    background-color: black;
+  }  
+    </style>
+</head>
+<body>
+  
+   <div class="main-box">
+    
+    <ul class="navbar">
+      <li><a href="#">Item One</a></li>
+      <li><a href="#">Item Two</a></li>
+      <li><a href="#">Item Three</a></li>
+      <li><a href="#">Item Four</a></li>
+      <li><a href="#">Item Five</a></li>
+     
+   </ul>
+   </div>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="custom.js"></script>
+     <script>
+      $(document).ready(function(){
+       $(".navbar li a").click(function(){
+        //method one
+        //  $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+        //method 2
+        $(".navbar li a").removeClass('active');
+        $(this).addClass('active');
+       });
+ });
+</script> 
+
+ 
+
+</body>
+</html>

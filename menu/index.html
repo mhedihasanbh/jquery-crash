@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <style>
+      *{
+         box-sizing: border-box;
+      }
+  .main-box{
+   background-color: bisque;
+   width: 800px;
+   height: 800px;
+   margin: auto;
+  }
+  .circle-box{
+   width: 100px;
+   height: 100px;
+   background-color: aqua;
+   border-radius: 50%;
+  }
+  .main-menu{
+   width: 300px;
+   padding: 50px;
+  }
+      
+    </style>
+</head>
+<body>
+   <button id="myValue">Click Here</button>
+   <div class="main-box">
+      <div class="main-menu">
+         <ul id="menu">
+            <li>website design
+             <ul>
+                <li>Html</li>
+                <li>css</li>
+                <li>javascript</li>
+             </ul>
+            </li>
+            <li>web development
+              <ul>
+                <li>Php</li>
+                <li>python</li>
+                <li>Asp</li>
+              </ul>
+            </li>
+            <li>Seo</li>
+            <li>Marketing
+             <ul>
+                <li>Email</li>
+                <li>Facebook</li>
+             </ul>
+            </li>
+            <li>Seo</li>
+            
+       
+           </ul>
+      </div>
+   
+      
+   </div>
+
+   
+ 
+    
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+     <script>
+      $(document).ready(function(){
+        
+      $("#menu").menu();
+
+        
+ });
+</script> 
+
+ 
+
+</body>
+</html>

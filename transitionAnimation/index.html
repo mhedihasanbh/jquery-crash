@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <style>
+      *{
+         box-sizing: border-box;
+      }
+  .main-box{
+   background-color: bisque;
+   width: 800px;
+   height: 800px;
+   margin: auto;
+  } 
+  .select-menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-top: 50px;
+   
+   
+   
+  }
+  .select-menu  li{
+   list-style: none;
+   border: 1px solid rosybrown;
+   padding: 20px;
+  }
+  .ui-selected{
+   background-color: red;
+   color: black;
+  }
+      
+    </style>
+</head>
+<body>
+   
+   <div class="main-box">
+      <div class="main-menu">
+        <ul class="select-menu">
+         <li><a href="">HTML</a></li>
+         <li>css</li>
+         <li>javascript</li>
+         <li>jquery</li>
+         <li>php</li>
+         <li>laravel</li>
+         <li>Python</li>
+        </ul>
+      </div>
+   
+      
+   </div>
+
+   
+ 
+    
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+     <script>
+      $(document).ready(function(){
+        
+      $(".select-menu").selectable();
+
+        
+ });
+</script> 
+
+ 
+
+</body>
+</html>
